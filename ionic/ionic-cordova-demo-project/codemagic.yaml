@@ -10,8 +10,8 @@ workflows:
             # APP_STORE_CONNECT_PRIVATE_KEY <-- Put your App Store Connect Private Key here
             # See the following link for more details - https://docs.codemagic.io/code-signing-yaml/signing-ios/
             # https://appstoreconnect.apple.com/access/api
-          - certificate_credentials # <-- (Includes CERTIFICATE_PRIVATE_KEY - Put your Certificate Private Key here)
-          - other
+- certificate_credentials # <-- (Includes CERTIFICATE_PRIVATE_KEY - Put your Certificate Private Key here)
+          # - other                    
       vars:      
         BUNDLE_ID: "io.codemagic.ioniccordova" # <-- Put your Bundle Id here 
       xcode: 12.4
